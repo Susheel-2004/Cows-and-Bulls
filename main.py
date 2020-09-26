@@ -6,7 +6,7 @@ You are guessing the 4-Digit number in my mind
 No repetitions
 "B" represents the number you guessed consists digit(s) which are in the right position
 "C" represents the number you guessed consists digits that are correct but not in their exact position
-Use your deductive skills to chase my number down
+Use your deductive skills to chase down my number
 All the best!!""")
 
 
@@ -14,13 +14,13 @@ def game():
 
     k = 0
     while True:
-        k += 1
-        guess = str(input(f"Guess{k}: "))
+        guess = str(input(f"Guess{k+1}: "))
         cows = 0
         bulls = 0
         if len(guess) != 4:
             print("Invalid Input")
         else:
+            k += 1
             for i in range(4):
                 if guess[i] == (first+last)[i]:
                     bulls += 1

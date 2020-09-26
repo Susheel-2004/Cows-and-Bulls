@@ -48,6 +48,5 @@ first = [digits[0]]
 digits[0] = "0"
 random.shuffle(digits)
 last = digits[0:3]
-print(first+last)
 game()
 replay()

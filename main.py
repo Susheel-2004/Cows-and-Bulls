@@ -7,6 +7,7 @@ No repetitions
 "B" represents the number you guessed consists digit(s) which are in the right position
 "C" represents the number you guessed consists digits that are correct but not in their exact position
 Use your deductive skills to chase down my number
+Type key in guess box to get the key and hint to get one hint per match
 All the best!!""")
 
 
@@ -14,10 +15,16 @@ def game():
 
     k = 0
     while True:
-        guess = str(input(f"Guess{k+1}: "))
+        guess = str(input(f"""Guess{k+1}(Type "key" to reveal the number and "hint" to get a hint):"""))
         cows = 0
         bulls = 0
-        if len(guess) != 4:
+        if guess == "key":
+            print(first+last)
+            print("Game ends here! Better luck next time")
+            replay()
+        elif guess == "hint":
+            print(f"{(first+last)[1]} is there in the secret number.........You're hints are over:(")
+        elif len(guess) != 4 or len(guess) != 3:
             print("Invalid Input")
         else:
             k += 1
@@ -26,7 +33,10 @@ def game():
                     bulls += 1
                 elif guess[i] in first+last:
                     cows += 1
-            print(f"{bulls}B {cows}C")
+            print(f"""{bulls} digit(s) are in the right place
+{cows} digit(s) are not in the right position
+{4 - (cows+bulls)} digits is/are not in the number you guessed
+One more try!!""")
             if bulls == 4:
                 print("You won!!")
                 print(f"You took {k} guess(es)")

@@ -6,7 +6,7 @@ You are guessing the 4-Digit number in my mind
 No repetitions
 "B" represents the number you guessed consists digit(s) which are in the right position
 "C" represents the number you guessed consists digits that are correct but not in their exact position
-Use your deductive skills to chase down my number
+Use your deductive skills to chase my number down
 All the best!!""")
 
 

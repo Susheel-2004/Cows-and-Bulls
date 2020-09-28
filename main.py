@@ -24,7 +24,7 @@ def game():
             replay()
         elif guess == "hint":
             print(f"{(first+last)[1]} is there in the secret number.........You're hints are over:(")
-        elif len(guess) != 4 or len(guess) != 3:
+        elif len(guess) != 4:
             print("Invalid Input")
         else:
             k += 1

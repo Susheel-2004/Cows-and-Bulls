@@ -6,8 +6,8 @@ You are guessing the 4-Digit number in my mind
 No repetitions
 "B" represents the number you guessed consists digit(s) which are in the right position
 "C" represents the number you guessed consists digits that are correct but not in their exact position
-Use your deductive skills to chase down my number
-Type key in guess box to get the key and hint to get one hint per match
+Use your deductive skills to chase my number down
+Type "key" in guess box to get the key and "hint" to get one hint per match
 All the best!!""")
 
 
@@ -33,8 +33,8 @@ def game():
                     bulls += 1
                 elif guess[i] in first+last:
                     cows += 1
-            print(f"""{bulls} digit(s) are in the right place
-{cows} digit(s) are not in the right position
+            print(f"""{bulls} digit(s) is/are in the right place
+{cows} digit(s) is/are not in the right position
 {4 - (cows+bulls)} digits is/are not in the number you guessed
 One more try!!""")
             if bulls == 4:

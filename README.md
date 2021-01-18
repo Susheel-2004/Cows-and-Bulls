@@ -1,4 +1,4 @@
-Cows and Bulls is a code-breaking game between two players which puts one's deductive skills to test. Players choose a random 4-digit number without any repititions.
+Cows and Bulls is a code-breaking game between two players which puts one's deductive skills to test.
 On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches. If the matching digits are in their right positions, they are "bulls", if in different positions, they are "cows". Example:
 
 Secret number: 4271
